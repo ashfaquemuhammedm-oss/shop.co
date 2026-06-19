@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>my-new-project</title>
+  <title>figma-project</title>
   <link rel="stylesheet" href="global.css">
   <script type="module">
     import { createIcons, icons } from 'lucide';
@@ -13,8 +13,572 @@
   </script>
 </head>
 
-<body class="h-screen w-full flex">
-    <div class="w-[1440px] h-[38px] rotate-0 opacity-100 bg-black">
+<body>
+  <div
+    class="relative flex items-center justify-center w-full lg:h-9.5 h-8.5 bg-black text-white text-[12px] md:text-[14px]">
+    <div class="flex justify-center items-center w-full">
+      <p>Sign up and get 20% off to your first order.</p>
+      <a href="" class="ml-1 lg:ml-2 underline font-semibold">Sign Up Now</a>
+    </div>
+    <div class="absolute right-4 lg:right-15 hidden lg:block">
+      <i data-lucide="x" class="text-white cursor-pointer w-4 h-4"></i>
+    </div>
+  </div>
+
+  <div class="flex items-center justify-between w-full px-4 lg:px-20 h-14 lg:h-24">
+    <div class="flex items-center gap-4">
+      <i data-lucide="menu" class="lg:hidden cursor-pointer mt-1 w-6 h-6"></i>
+      <div class="logo text-[25px] lg:text-[32px] -mt-1 font-extrabold">
+        <a href="/">
+          <h1>SHOP.CO</h1>
+        </a>
+      </div>
+    </div>
+
+    <div class="hidden lg:flex gap-8 items-center text-[16px]">
+      <div class="flex items-center gap-1 cursor-pointer">
+        <p>Shop</p><i data-lucide="chevron-down" class="w-4 h-4 mt-0.5"></i>
+      </div>
+      <a href="" class="cursor-pointer">
+        <p>On Sale</p>
+      </a>
+      <a href="" class="cursor-pointer">
+        <p>New Arrivals</p>
+      </a>
+      <a href="" class="cursor-pointer">
+        <p>Brands</p>
+      </a>
+    </div>
+
+    <div class="flex items-center gap-4 lg:gap-6">
+      <div class="relative hidden lg:block">
+        <i data-lucide="search" class="absolute text-gray-400 left-4 top-1/2 -translate-y-1/2 w-5 h-5"></i>
+        <input type="text" placeholder="search the product..."
+          class="w-140 pl-12 pr-4 h-12 bg-gray-100 rounded-full text-[16px] outline-none">
+      </div>
+      <i data-lucide="search" class="lg:hidden cursor-pointer w-6 h-6 mt-1"></i>
+      <i data-lucide="shopping-cart" class="cursor-pointer w-6 h-6 mt-1"></i>
+      <i data-lucide="circle-user-round" class="cursor-pointer w-6 h-6 mt-1"></i>
+    </div>
+  </div>
+
+
+  <div class="flex flex-col lg:flex-row w-full bg-[#F2F0F1] h-auto lg:h-165.75">
+    <div class="flex flex-col items-center justify-center lg:w-1/2 h-auto lg:h-165.75 bg-[#F2F0F1] pb-0 lg:pb-0">
+      <h1
+        class="lg:text-[64px] text-[36px] w-78.75 lg:w-138 hero lg:ml-0 mt-8 lg:-mt-20 text-left font-extrabold leading-16">
+        FIND CLOTHES THAT
+        MATCHES
+        YOUR STYLE
+      </h1>
+      <p class="lg:w-140 w-89.5 lg:-ml-9 text-[14px] text-gray-500 lg:text-[15px] mt-4 lg:mt-6 text-left">Browse
+        through our diverse
+        range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of
+        style</p>
+      <button class="bg-black text-white lg:w-52.5 w-89.5 h-13 rounded-[100px] mt-6 lg:-ml-100 cursor-pointer">Shop
+        Now</button>
+      <div class="flex flex-wrap lg:flex-nowrap justify-center gap-y-4 gap-x-8 lg:gap-16 mt-6 px-4 lg:px-0">
+        <div class="flex justify-between w-89.5 lg:w-auto gap-8 sm:gap-16 lg:gap-16">
+          <div class="pr-6 sm:pr-12 border-r border-gray-300 lg:border-none">
+            <h1 class="font-bold text-[24px] lg:text-[40px]">200+</h1>
+            <p class="text-[12px] lg:text-[15px] text-gray-500">International Brands</p>
+          </div>
+          <div>
+            <h1 class="font-bold text-[24px] lg:text-[40px]">2,000+</h1>
+            <p class="text-[12px] lg:text-[15px] text-gray-500">High-Quality Products</p>
+          </div>
+        </div>
+        <div class="w-full lg:w-auto text-center lg:text-left mt-2 lg:mt-0">
+          <h1 class="font-bold text-[24px] lg:text-[40px]">30,000+</h1>
+          <p class="text-[12px] lg:text-[15px] text-gray-500">Happy Customers</p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative lg:static flex justify-end bg-[#F2F0F1] lg:w-1/2 h-auto lg:h-165.75 overflow-hidden mt-8 lg:mt-0">
+      <img src="./src/assets/b26fea69ccfd8aa5825862cdb9604a4fb4930464.jpg"
+        class="h-100 lg:h-252 relative w-full lg:w-auto lg:-top-11.25 lg:-left-17.75 object-cover object-top">
+
+      <img src="./src/assets/Vector 1.png" class="absolute lg:hidden w-14 h-14 top-10 right-5">
+      <img src="./src/assets/Vector 2.png" class="absolute lg:hidden w-10 h-10 top-36 left-7">
+
+      <!-- Desktop Stars -->
+      <img src="./src/assets/Vector 1.png" class="absolute hidden lg:block w-26 h-26 top-55 left-335.75">
+      <img src="./src/assets/Vector 2.png" class="absolute hidden lg:block w-14 h-14 top-107.75 left-187.5">
+    </div>
+  </div>
+
+
+  <div class="flex items-center justify-center bg-black w-full lg:h-30.5 py-7 lg:py-0">
+    <div
+      class="grid grid-cols-6 gap-x-4 gap-y-6 items-center justify-center w-full 89.5 lg:max-w-none lg:flex lg:flex-wrap lg:justify-center lg:gap-x-30 lg:gap-y-0 h-auto">
+      <div class="col-span-2 flex justify-center"><img src="./src/assets/versace.png" class="w-20 lg:w-auto"></div>
+      <div class="col-span-2 flex justify-center"><img src="./src/assets/zara-logo-1 1.png" class="w-14 lg:w-auto">
+      </div>
+      <div class="col-span-2 flex justify-center"><img src="./src/assets/gucci-logo-1 1.png" class="w-20 lg:w-auto">
+      </div>
+      <div class="col-span-3 flex justify-center"><img src="./src/assets/prada-logo-1 1.png" class="w-20 lg:w-auto">
+      </div>
+      <div class="col-span-3 flex justify-center"><img src="./src/assets/ck.png" class="w-24 lg:w-auto"></div>
+    </div>
+  </div>
+
+
+  <div class="w-full h-auto pb-6">
+    <h1 class="flex logo lg:text-[48px] text-[32px] justify-center mt-10 lg:mt-18 font-extrabold">NEW ARRIVALS</h1>
+    <div class="grid grid-cols-2 gap-4 px-4 mt-6 lg:flex lg:gap-0 lg:justify-between lg:px-25 lg:mt-13.75">
+      <div class="flex flex-col">
+        <div
+          class="overflow-hidden w-full aspect-square lg:w-73.75 lg:h-73.75 rounded-[13px] lg:rounded-2xl bg-[#F0EEED] relative flex items-center justify-center">
+          <img src="src/assets/t-shirt.png"
+            class="absolute h-full w-full object-cover lg:static lg:h-auto lg:w-auto lg:relative lg:-top-17">
+        </div>
+        <h1 class="mt-2 text-[14px] lg:text-[20px] font-semibold">T-shirt with Tape Details</h1>
+        <div class="flex items-center mt-1">
+          <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+          <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+          <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+          <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+          <div class="overflow-hidden w-1.75 lg:w-2.5"><i data-lucide="star"
+              class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i></div>
+          <h1 class="ml-1.5 text-[12px] lg:text-[14px]">4.5/<span class="text-gray-400">5</span></h1>
+        </div>
+        <h1 class="text-[20px] lg:text-[24px] mt-1"><b>$120</b></h1>
+      </div>
+
+      <div class="flex flex-col">
+        <div
+          class="overflow-hidden w-full aspect-square lg:w-73.75 lg:h-73.75 rounded-[13px] lg:rounded-2xl bg-[#F0EEED] relative flex items-center justify-center">
+          <img src="./src/assets/skinny 2.png"
+            class="absolute h-full w-full object-cover lg:static lg:h-auto lg:w-auto lg:relative lg:-top-17">
+        </div>
+        <h1 class="mt-2 text-[14px] lg:text-[20px] font-semibold">Skinny Fit Jeans</h1>
+        <div class="flex items-center mt-1">
+          <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+          <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+          <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+          <div class="overflow-hidden w-1.75 lg:w-2.5"><i data-lucide="star"
+              class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i></div>
+          <h1 class="ml-1.5 text-[12px] lg:text-[14px]">3.5/<span class="text-gray-400">5</span></h1>
+        </div>
+        <div class="flex items-center gap-2 mt-1">
+          <h1 class="text-[20px] lg:text-[24px]"><b>$240</b></h1>
+          <h1 class="text-[20px] lg:text-[24px] text-gray-400 line-through"><b>$260</b></h1>
+          <div class="flex items-center justify-center bg-[#FF33331A] px-2 py-0.5 rounded-full">
+            <p class="text-[#FF3333] text-[10px] lg:text-[12px] font-medium">-20%</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flex flex-col">
+        <div
+          class="overflow-hidden w-full aspect-square lg:w-73.75 lg:h-73.75 rounded-[13px] lg:rounded-2xl bg-[#F0EEED] relative flex items-center justify-center">
+          <img src="./src/assets/chek 3.png"
+            class="absolute h-full w-full object-cover lg:static lg:h-auto lg:w-auto lg:relative lg:-top-17">
+        </div>
+        <h1 class="mt-2 text-[14px] lg:text-[20px] font-semibold">Checkered Shirt</h1>
+        <div class="flex items-center mt-1">
+          <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+          <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+          <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+          <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+          <div class="overflow-hidden w-1.75 lg:w-2.5"><i data-lucide="star"
+              class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i></div>
+          <h1 class="ml-1.5 text-[12px] lg:text-[14px]">4.5/<span class="text-gray-400">5</span></h1>
+        </div>
+        <h1 class="text-[20px] lg:text-[24px] mt-1"><b>$180</b></h1>
+      </div>
+
+
+      <div class="flex flex-col">
+      <div
+        class="overflow-hidden w-full aspect-square lg:w-[295px] lg:h-[295px] rounded-[13px] lg:rounded-2xl bg-[#F0EEED] relative flex items-center justify-center">
+        <img src="./src/assets/sleev4.png"
+          class="absolute h-full w-full object-cover lg:static lg:h-auto lg:w-auto lg:relative lg:-top-17">
+      </div>
+      <h1 class="mt-2 text-[14px] lg:text-[20px] font-semibold">SLEEVE STRIPED T-SHIRT</h1>
+      <div class="flex items-center mt-1">
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+         <div class="overflow-hidden w-1.75 lg:w-2.5"><i data-lucide="star"
+              class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i></div>
+        <h1 class="ml-1.5 text-[12px] lg:text-[14px]">4.5/<span class="text-gray-400">5</span></h1>
+      </div>
+      <div class="flex items-center gap-2 mt-1">
+        <h1 class="text-[20px] lg:text-[24px]"><b>$130</b></h1>
+        <h1 class="text-[20px] lg:text-[24px] text-gray-400 line-through"><b>$160</b></h1>
+        <div class="flex items-center justify-center bg-[#FF33331A] px-2 py-0.5 rounded-full">
+          <p class="text-[#FF3333] text-[10px] lg:text-[12px] font-medium">-30%</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="flex justify-center mt-[24px] lg:mt-[36px] px-4"><button
+        class="w-full lg:w-50 h-12 border border-gray-200 rounded-3xl cursor-pointer hover:bg-black hover:text-white transition">View
+        All</button></div>
+    <div class="flex justify-center mt-10 lg:mt-[64px]">
+      <hr class="flex w-11/12 lg:w-32/37 text-gray-200">
+    </div>
+  </div>
+
+
+
+  <h1 class="flex logo lg:text-[48px] text-[32px] justify-center mt-10 lg:mt-[64px] font-extrabold">TOP SELLING</h1>
+  <div class="grid grid-cols-2 gap-4 px-4 mt-6 lg:flex lg:gap-0 lg:justify-between lg:px-[100px] lg:mt-[55px] ">
+
+    <div class="flex flex-col">
+      <div
+        class="overflow-hidden w-full aspect-square lg:w-[295px] lg:h-[295px] rounded-[13px] lg:rounded-2xl bg-[#F0EEED] relative flex items-center justify-center">
+        <img src="./src/assets/vertical 5.png"
+          class="absolute h-full w-full object-cover lg:static lg:h-auto lg:w-auto lg:relative lg:-top-17">
+      </div>
+      <h1 class="mt-2 text-[14px] lg:text-[20px] font-semibold">Vertical Striped Shirt</h1>
+      <div class="flex items-center mt-1">
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <h1 class="ml-1.5 text-[12px] lg:text-[14px]">5.0/<span class="text-gray-400">5</span></h1>
+      </div>
+      <div class="flex items-center gap-2 mt-1">
+        <h1 class="text-[20px] lg:text-[24px]"><b>$212</b></h1>
+        <h1 class="text-[20px] lg:text-[24px] text-gray-400 line-through"><b>$232</b></h1>
+        <div class="flex items-center justify-center bg-[#FF33331A] px-2 py-0.5 rounded-full">
+          <p class="text-[#FF3333] text-[10px] lg:text-[12px] font-medium">-20%</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flex flex-col">
+      <div
+        class="overflow-hidden w-full aspect-square lg:w-[295px] lg:h-[295px] rounded-[13px] lg:rounded-2xl bg-[#F0EEED] relative flex items-center justify-center">
+        <img src="./src/assets/courage 6.png"
+          class="absolute h-full w-full object-cover lg:static lg:h-auto lg:w-auto lg:relative lg:-top-17">
+      </div>
+      <h1 class="mt-2 text-[14px] lg:text-[20px] font-semibold">Courage Graphic T-shirt</h1>
+      <div class="flex items-center mt-1">
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <h1 class="ml-1.5 text-[12px] lg:text-[14px]">4.0/<span class="text-gray-400">5</span></h1>
+      </div>
+      <h1 class="text-[20px] lg:text-[24px] mt-1"><b>$145</b></h1>
+    </div>
+
+
+    <div class="flex flex-col">
+      <div
+        class="overflow-hidden w-full aspect-square lg:w-[295px] lg:h-[295px] rounded-[13px] lg:rounded-2xl bg-[#F0EEED] relative flex items-center justify-center">
+        <img src="./src/assets/loose 7.png"
+          class="absolute h-full w-full object-cover lg:static lg:h-auto lg:w-auto lg:relative lg:-top-17">
+      </div>
+      <h1 class="mt-2 text-[14px] lg:text-[20px] font-semibold">Loose Fit Bermuda Shorts</h1>
+      <div class="flex items-center mt-1">
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+
+        <h1 class="ml-1.5 text-[12px] lg:text-[14px]">3.0/<span class="text-gray-400">5</span></h1>
+      </div>
+      <div class="flex items-center gap-2 mt-1">
+        <h1 class="text-[20px] lg:text-[24px]"><b>$80</b></h1>
+      </div>
+    </div>
+
+
+    <div class="flex flex-col">
+      <div
+        class="overflow-hidden w-full aspect-square lg:w-[295px] lg:h-[295px] rounded-[13px] lg:rounded-2xl bg-[#F0EEED] relative flex items-center justify-center">
+        <img src="./src/assets/Faded 8.png"
+          class="absolute h-full w-full object-cover lg:static lg:h-auto lg:w-auto lg:relative lg:-top-17">
+      </div>
+      <h1 class="mt-2 text-[14px] lg:text-[20px] font-semibold">Faded Skinny Jeans</h1>
+      <div class="flex items-center mt-1">
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i>
+        <div class="overflow-hidden w-1.75 lg:w-2.5"><i data-lucide="star"
+            class="text-amber-400 fill-amber-400 w-3.5 h-3.5 lg:w-[18.49px] lg:h-[18.49px]"></i></div>
+        <h1 class="ml-1.5 text-[12px] lg:text-[14px]">4.5/<span class="text-gray-400">5</span></h1>
+      </div>
+      <div class="flex items-center gap-2 mt-1">
+        <h1 class="text-[20px] lg:text-[24px]"><b>$210</b></h1>
+
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center mt-[24px] lg:mt-[36px] px-4"><button
+      class="w-full lg:w-50 h-12 border border-gray-200 rounded-3xl cursor-pointer hover:bg-black hover:text-white transition">View
+      All</button>
+  </div>
+
+
+
+<div class="flex justify-center mt-10 md:mt-20 px-4">
+  <div class="bg-[#F0F0F0] w-full max-w-[1350px] rounded-[40px] p-6 md:p-10">
+
+    <!-- Heading -->
+    <div class="flex justify-center mb-8 md:mb-12">
+      <h1 class="text-[28px] md:text-[40px] lg:text-[48px] font-extrabold text-center">
+        BROWSE BY DRESS STYLE
+      </h1>
+    </div>
+
+    <!-- First Row -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-5">
+
+      <!-- Casual -->
+      <div class="relative rounded-3xl overflow-hidden bg-white h-[250px] md:h-[289px]">
+        <h1 class="absolute top-6 left-6 z-10 text-3xl font-bold">Casual</h1>
+        <img src="./src/assets/Casual new.png" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Formal -->
+      <div class="relative lg:col-span-2 rounded-3xl overflow-hidden bg-white h-[250px] md:h-[289px]">
+        <h1 class="absolute top-6 left-6 z-10 text-3xl font-bold">Formal</h1>
+        <img src="./src/assets/Formal new.png" class="w-full h-full object-cover">
+      </div>
+
+    </div>
+
+    <!-- Second Row -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+
+      <!-- Party -->
+      <div class="relative lg:col-span-2 rounded-3xl overflow-hidden bg-white h-[250px] md:h-[289px]">
+        <h1 class="absolute top-6 left-6 z-10 text-3xl font-bold">Party</h1>
+        <img src="./src/assets/party new.png" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Gym -->
+      <div class="relative rounded-3xl overflow-hidden bg-white h-[250px] md:h-[289px]">
+        <h1 class="absolute top-6 left-6 z-10 text-3xl font-bold">Gym</h1>
+        <img src="./src/assets/Gym new.png" class="w-full h-full object-cover">
+      </div>
+
+    </div>
+
+  </div>
 </div>
-  </body>
+
+
+
+  <div class="flex justify-between items-center logo text-[32px] lg:text-[48px] px-4 lg:px-[100px] mt-12 lg:mt-[80px]">
+    <h1 class="leading-none font-extrabold">OUR HAPPY CUSTOMERS</h1>
+    <div class="flex mt-1 lg:mt-4 lg:mr-30 text-black">
+      <i data-lucide="move-left" class="mr-5 cursor-pointer w-6 h-6 lg:w-8 lg:h-8"></i>
+      <i data-lucide="move-right" class="cursor-pointer w-6 h-6 lg:w-8 lg:h-8"></i>
+    </div>
+  </div>
+
+
+  <div class="relative flex gap-[20px] px-4 lg:px-[100px] mt-6 lg:mt-[40px] w-full h-auto no-scrollbar overflow-x-auto">
+    <div class="flex flex-col w-[358px] lg:w-[400px] h-auto border p-6 shrink-0 border-[#0000001A] rounded-3xl">
+      <div class="flex mt-1 lg:mt-[28px] ml-0 lg:ml-[32px]">
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+      </div>
+      <div class="flex ml-0 lg:ml-[34px] mt-3 items-center">
+        <h1 class="text-[20px] lg:text-[25px] font-bold">Sarah M.</h1>
+        <i data-lucide="check"
+          class="bg-emerald-500 ml-2 p-0.5 text-white rounded-full w-4 h-4 flex items-center justify-center"></i>
+      </div>
+      <p class="ml-0 lg:ml-[34px] mt-2 text-[14px] lg:text-[16px] text-gray-500">"I'm blown away by the quality and
+        style of the clothes I received from Shop.co.
+        From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+    </div>
+    <div class="flex flex-col w-[358px] lg:w-[400px] h-auto p-6 shrink-0 border border-[#0000001A] rounded-3xl">
+      <div class="flex mt-1 lg:mt-[28px] ml-0 lg:ml-[32px]">
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+      </div>
+      <div class="flex ml-0 lg:ml-[34px] mt-3 items-center">
+        <h1 class="text-[20px] lg:text-[25px] font-bold">Alex K.</h1>
+        <i data-lucide="check"
+          class="bg-emerald-500 ml-2 p-0.5 text-white rounded-full w-4 h-4 flex items-center justify-center"></i>
+      </div>
+      <p class="ml-0 lg:ml-[34px] mt-2 text-[14px] lg:text-[16px] text-gray-500">"Finding clothes that align with my
+        personal style used to be a challenge until I
+        discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and
+        occasions.”</p>
+    </div>
+    <div class="flex flex-col w-[358px] lg:w-[400px] h-auto border p-6 shrink-0 border-[#0000001A] rounded-3xl">
+      <div class="flex mt-1 lg:mt-[28px] ml-0 lg:ml-[32px]">
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+      </div>
+      <div class="flex ml-0 lg:ml-[34px] mt-3 items-center">
+        <h1 class="text-[20px] lg:text-[25px] font-bold">James L.</h1>
+        <i data-lucide="check"
+          class="bg-emerald-500 ml-2 p-0.5 text-white rounded-full w-4 h-4 flex items-center justify-center"></i>
+      </div>
+      <p class="ml-0 lg:ml-[34px] mt-2 text-[14px] lg:text-[16px] text-gray-500">"As someone who's always on the lookout
+        for unique fashion pieces, I'm thrilled
+        to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+        trends.”</p>
+    </div>
+    <div class="flex flex-col w-[358px] lg:w-[400px] h-auto border p-6 shrink-0 border-[#0000001A] rounded-3xl">
+      <div class="flex mt-1 lg:mt-[28px] ml-0 lg:ml-[32px]">
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+      </div>
+      <div class="flex ml-0 lg:ml-[34px] mt-3 items-center">
+        <h1 class="text-[20px] lg:text-[25px] font-bold">Sarah M.</h1>
+        <i data-lucide="check"
+          class="bg-emerald-500 ml-2 p-0.5 text-white rounded-full w-4 h-4 flex items-center justify-center"></i>
+      </div>
+      <p class="ml-0 lg:ml-[34px] mt-2 text-[14px] lg:text-[16px] text-gray-500">"I'm blown away by the quality and
+        style of the clothes I received from Shop.co.
+        From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+    </div>
+    <div class="flex flex-col w-[358px] lg:w-[400px] h-auto border p-6 shrink-0 border-[#0000001A] rounded-3xl">
+      <div class="flex mt-1 lg:mt-[28px] ml-0 lg:ml-[32px]">
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+        <i data-lucide="star" class="text-amber-400 fill-amber-400 w-[19px] h-[19px]"></i>
+      </div>
+      <div class="flex ml-0 lg:ml-[34px] mt-3 items-center">
+        <h1 class="text-[20px] lg:text-[25px] font-bold">Sarah M.</h1>
+        <i data-lucide="check"
+          class="bg-emerald-500 ml-2 p-0.5 text-white rounded-full w-4 h-4 flex items-center justify-center"></i>
+      </div>
+      <p class="ml-0 lg:ml-[34px] mt-2 text-[14px] lg:text-[16px] text-gray-500">"I'm blown away by the quality and
+        style of the clothes I received from Shop.co.
+        From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+    </div>
+  </div>
+
+
+  <div class="relative w-full flex flex-col items-center mt-12 lg:mt-[80px]">
+    <!-- Newsletter Banner -->
+    <div
+      class="relative lg:absolute z-20 w-full max-w-[358px] lg:max-w-[1240px] h-auto lg:h-[180px] flex flex-col lg:flex-row justify-between items-center bg-black rounded-[20px] lg:rounded-4xl px-6 py-9 lg:px-16 lg:py-0 -mb-[140px] lg:-mb-24">
+      <h1 class="text-[32px] lg:text-[40px] leading-tight font-black hero text-left text-white w-full lg:w-[551px]">STAY
+        UPTO DATE ABOUT OUR LATEST OFFERS</h1>
+      <div class="flex flex-col w-full lg:w-auto mt-6 lg:mt-0 gap-3">
+        <div class="relative w-full lg:w-[349px]">
+          <i data-lucide="mail" class="absolute text-gray-400 left-4 top-1/2 -translate-y-1/2 w-5 h-5"></i>
+          <input type="text" placeholder="Enter your email address"
+            class="w-full pl-12 pr-4 h-12 bg-white rounded-full text-[14px] lg:text-[16px] outline-none">
+        </div>
+        <button
+          class="w-full lg:w-[349px] h-12 bg-white text-black font-semibold rounded-full text-[14px] lg:text-[16px] cursor-pointer hover:bg-gray-100 transition">Subscribe
+          to Newsletter</button>
+      </div>
+    </div>
+
+    <!-- Footer Container -->
+    <div class="w-full bg-[#F0F0F0] pt-[180px] lg:pt-[140px] pb-6 mt-0 lg:mt-[90px]">
+      <div
+        class="flex flex-col lg:flex-row items-start justify-between w-full max-w-[358px] lg:max-w-[1240px] mx-auto px-4 lg:px-0 gap-8 lg:gap-0">
+        <!-- Logo & Description -->
+        <div class="flex flex-col w-full lg:w-[248px]">
+          <div class="hero text-[32px] font-black text-black">
+            <h1>SHOP.CO</h1>
+          </div>
+          <p class="mt-4 text-[13px] text-gray-500 leading-relaxed">We have clothes that suits your style and which
+            you’re proud to wear. From women to men.</p>
+          <div class="flex mt-6 gap-3">
+            <div
+              class="flex justify-center items-center bg-white hover:bg-black hover:text-white border w-7 h-7 border-gray-200 rounded-full cursor-pointer transition">
+              <img src="./src/assets/t1.png" alt="twitter logo" class="w-full ">
+            </div>
+            <div
+              class="flex justify-center items-center bg-black text-white hover:bg-white hover:text-black border w-7 h-7 border-gray-200 rounded-full cursor-pointer transition">
+              <img src="./src/assets/2.png" alt="facebook logo" class="w-full">
+            </div>
+            <div
+              class="flex justify-center items-center bg-white hover:bg-black hover:text-white border w-7 h-7 border-gray-200 rounded-full cursor-pointer transition">
+              <img src="./src/assets/3.png" alt="instagram logo" class="w-full">
+            </div>
+            <div
+              class="flex justify-center items-center bg-white hover:bg-black hover:text-white border w-7 h-7 border-gray-200 rounded-full cursor-pointer transition">
+              <img src="./src/assets/4.png" alt="github logo" class="w-full">
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid of Link Lists -->
+        <div class="grid grid-cols-2 gap-y-8 gap-x-12 w-full lg:flex lg:justify-between lg:w-auto lg:gap-24">
+          <div class="flex flex-col gap-3 lg:gap-4">
+            <h1 class="font-bold text-[14px] lg:text-[16px] text-black tracking-wider">COMPANY</h1>
+            <p class="text-gray-500 hover:text-black cursor-pointer text-[14px]">About</p>
+            <p class="text-gray-500 hover:text-black cursor-pointer text-[14px]">Feature</p>
+            <p class="text-gray-500 hover:text-black cursor-pointer text-[14px]">Works</p>
+            <p class="text-gray-500 hover:text-black cursor-pointer text-[14px]">Career</p>
+          </div>
+          <div class="flex flex-col gap-3 lg:gap-4">
+            <h1 class="font-bold text-[14px] lg:text-[16px] text-black tracking-wider">HELP</h1>
+            <p class="text-gray-500 hover:text-black cursor-pointer text-[14px]">Customer Support</p>
+            <p class="text-gray-500 hover:text-black cursor-pointer text-[14px]">Delivery Details</p>
+            <p class="text-gray-500 hover:text-black cursor-pointer text-[14px]">Terms & Conditions</p>
+            <p class="text-gray-500 hover:text-black cursor-pointer text-[14px]">Privacy Policy</p>
+          </div>
+          <div class="flex flex-col gap-3 lg:gap-4">
+            <h1 class="font-bold text-[14px] lg:text-[16px] text-black tracking-wider">FAQ</h1>
+            <p class="text-gray-500 hover:text-black cursor-pointer text-[14px]">Account</p>
+            <p class="text-gray-500 hover:text-black cursor-pointer text-[14px]">Manage Deliveries</p>
+            <p class="text-gray-500 hover:text-black cursor-pointer text-[14px]">Orders</p>
+            <p class="text-gray-500 hover:text-black cursor-pointer text-[14px]">Payments</p>
+          </div>
+          <div class="flex flex-col gap-3 lg:gap-4">
+            <h1 class="font-bold text-[14px] lg:text-[16px] text-black tracking-wider">RESOURCES</h1>
+            <p class="text-gray-500 hover:text-black cursor-pointer text-[14px]">Free eBooks</p>
+            <p class="text-gray-500 hover:text-black cursor-pointer text-[14px]">Development Tutorial</p>
+            <p class="text-gray-500 hover:text-black cursor-pointer text-[14px]">How to - Blog</p>
+            <p class="text-gray-500 hover:text-black cursor-pointer text-[14px]">Youtube Playlist</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider and Copyright -->
+      <hr class="w-full max-w-[358px] lg:max-w-[1240px] mx-auto border-gray-200 mt-8 lg:mt-12">
+      <div
+        class="flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between items-center w-full max-w-[358px] lg:max-w-[1240px] mx-auto mt-4 pb-8 px-4 lg:px-0">
+        <p class="text-gray-400 text-[14px] text-center lg:text-left">Shop.co © 2000-2023, All Rights Reserved</p>
+        <div class="flex gap-2">
+          <div class="flex justify-center items-center rounded-lg w-[46.6px] h-[30px] bg-white border border-gray-100">
+            <img src="./src/assets/visa.png" class="w-full h-[45.8px] mt-2">
+          </div>
+          <div class="flex justify-center items-center rounded-lg w-[46.6px] h-[30px] bg-white border border-gray-100">
+            <img src="./src/assets/Badge.png" class="w-full h-[45.8px] mt-2">
+          </div>
+          <div class="flex justify-center items-center rounded-lg w-[46.6px] h-[30px] bg-white border border-gray-100">
+            <img src="./src/assets/paypal.png" class="w-full h-[45.8px] mt-2">
+          </div>
+          <div class="flex justify-center items-center rounded-lg w-[46.6px] h-[30px] bg-white border border-gray-100">
+            <img src="./src/assets/ipay.png" class="w-full h-[45.8px] mt-2">
+          </div>
+          <div class="flex justify-center items-center rounded-lg w-[46.6px] h-[30px] bg-white border border-gray-100">
+            <img src="./src/assets/gpay.png" class="w-full h-[45.8px] mt-2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
 </html>

@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Integral";
+  src: url("C:\Users\Dell\OneDrive\Desktop\intership New\figma-project\public\font\Fontspring-DEMO-integralcf-bold.otf") format("public");
+  font-weight: 700;
+  font-style: normal;
+}

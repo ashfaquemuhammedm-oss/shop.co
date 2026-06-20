@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="global.css">
+
+  <title>shop-co</title>
+  <script type="module">
+    import { createIcons, icons } from 'lucide';
+    createIcons({ icons });
+  </script>
+</head>
+
+<body>
+  <!-- top banner -->
+  <div
+    class="relative w-full bg-black text-white py-2 px-4 flex items-center justify-center satoshi text-xs md:text-sm">
+    <p class="text-center flex-1">
+      Sign up and get 20% off to your first order. <a href="#" class="underline font-bold hover:text-gray-200">Sign Up
+        Now</a>
+    </p>
+    <button class="absolute right-4 md:right-12 focus:outline-none hidden md:block">
+      <i data-lucide="x" class="w-4 h-4 text-white hover:text-gray-300"></i>
+    </button>
+  </div>
+
+  <!-- navbar -->
+  <header class="w-full bg-white border-b border-gray-100">
+    <nav class="flex items-center justify-between w-[90%] max-w-7xl h-16 md:h-20 mx-auto gap-4">
+      <div class="flex items-center gap-4">
+        <!-- Hamburger Menu Button -->
+        <button class="block md:hidden text-black focus:outline-none cursor-pointer">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+        <!-- Logo -->
+        <a href="#" class="logo font-extrabold text-3xl md:text-[32px]">SHOP.CO</a>
+      </div>
+
+      <!-- Links (Desktop Only) -->
+      <div class="hidden md:flex items-center gap-6 lg:gap-8 satoshi text-sm md:text-base font-medium text-black">
+        <a href="#" class="flex items-center gap-1 hover:text-gray-600 transition-colors">
+          <span>Shop</span>
+          <i data-lucide="chevron-down" class="w-4 h-4"></i>
+        </a>
+        <a href="#" class="hover:text-gray-600 transition-colors">On Sale</a>
+        <a href="#" class="hover:text-gray-600 transition-colors">New Arrivals</a>
+        <a href="#" class="hover:text-gray-600 transition-colors">Brands</a>
+      </div>
+
+      <!-- Search Box (Desktop Only) -->
+      <div class="hidden md:block flex-1 max-w-[600px] mx-4 lg:mx-8">
+        <div class="relative w-full">
+          <i data-lucide="search" class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5"></i>
+          <input type="text" placeholder="Search for products..."
+            class="w-full bg-[#F0F0F0] rounded-full pl-12 pr-4 py-2.5 text-sm focus:outline-none text-black placeholder-gray-400 satoshi">
+        </div>
+      </div>
+
+      <!-- Icons -->
+      <div class="flex items-center gap-3.5 md:gap-5 text-black">
+        <!-- Search Button (Mobile Only) -->
+        <button class="block md:hidden focus:outline-none cursor-pointer">
+          <i data-lucide="search" class="w-6 h-6"></i>
+        </button>
+        <!-- Cart -->
+        <a href="#" class="focus:outline-none cursor-pointer hover:text-gray-600 transition-colors">
+          <i data-lucide="shopping-cart" class="w-6 h-6"></i>
+        </a>
+        <!-- Profile -->
+        <a href="#" class="focus:outline-none cursor-pointer hover:text-gray-600 transition-colors">
+          <i data-lucide="circle-user-round" class="w-6 h-6"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="flex items-center gap-2 mt-5 md:mt-6 text-gray-500 w-[90%] max-w-7xl mx-auto satoshi text-xs md:text-sm">
+    <a href="#" class="hover:text-black transition-colors">Home</a>
+    <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-gray-400"></i>
+    <a href="#" class="hover:text-black transition-colors">Shop</a>
+    <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-gray-400"></i>
+    <a href="#" class="hover:text-black transition-colors">Men</a>
+    <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-gray-400"></i>
+    <span class="text-black font-medium">T-Shirts</span>
+  </div>
+
+  <!-- Product Section -->
+  <main class="flex flex-col md:flex-row not-last-of-type: mt-6 gap-8 lg:gap-10 w-[90%] max-w-7xl mx-auto">
+    <!-- Left Images Area -->
+    <div class="flex flex-col md:flex-row gap-4 w-full lg:w-[50%]">
+      <!-- Thumbnails -->
+      <div class="flex flex-row md:flex-col gap-3 md:gap-4 order-2 md:order-1 w-full md:w-auto">
+        <div
+          class="flex-1 md:w-38 md:h-42 aspect-square md:aspect-auto border border-black rounded-2xl bg-[#F0EEED] flex justify-center items-center overflow-hidden cursor-pointer hover:border-black transition-colors">
+          <img src="./images/m2.png" class="">
+        </div>
+        <div
+          class="flex-1 md:w-38 md:h-42 aspect-square md:aspect-auto rounded-2xl bg-[#F0EEED] flex justify-center items-center overflow-hidden ">
+          <img src="./images/m3.png" class="">
+        </div>
+        <div
+          class="flex-1 md:w-38 md:h-42 aspect-square md:aspect-auto rounded-2xl bg-[#F0EEED] flex justify-center items-center overflow-hidden  ">
+          <img src="./images/m4.png" class="  relative  md:-top-3">
+        </div>
+      </div>
+
+      <!-- Main Product Image -->
+      <div
+        class="order-1 md:order-2 flex-1 sm:h-[400px] md:h-[530px] bg-[#F0EEED] rounded-2xl flex justify-center items-center overflow-hidden">
+        <img src="./images/m1.png" class=" object-cover p-6 md:p-10">
+      </div>
+    </div>
+
+    <!-- Product Details Area -->
+    <div class="flex flex-col w-full lg:w-[50%] mt-2">
+      <h1 class=" text-4xl md:text-[40px] leading-tight font-extrabold">ONE LIFE GRAPHIC T-SHIRT</h1>
+
+      <!-- rating stars -->
+      <div class="flex gap-2 mt-2 items-center">
+        <div class="text-xl md:text-2xl flex">
+          <i data-lucide="star" class="fill-amber-300 text-amber-300"></i>
+          <i data-lucide="star" class="fill-amber-300 text-amber-300"></i>
+          <i data-lucide="star" class="fill-amber-300 text-amber-300"></i>
+          <i data-lucide="star" class="fill-amber-300 text-amber-300"></i>
+          <i data-lucide="star-half" class="fill-amber-300 text-amber-300"></i>
+        </div>
+        <p class="satoshi text-sm md:text-base text-black font-normal -ml-1">4.5/<span class="text-gray-400">5</span>
+        </p>
+      </div>
+
+      <!-- price and discount -->
+      <div class="satoshi flex gap-4 items-center mt-3">
+        <h2 class="text-2xl md:text-3xl font-bold text-black">$260</h2>
+        <h2 class="text-2xl md:text-3xl text-gray-400 line-through font-bold">$300</h2>
+        <div class="bg-red-100 text-red-500 px-3 py-1 rounded-full  md:text-sm font-semibold">
+          -40%
+        </div>
+      </div>
+
+      <!-- description -->
+      <div class="w-full mt-4">
+        <p class="satoshi text-gray-500 text-[13px] md:text-base ">
+          This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers
+          superior comfort and style.
+        </p>
+      </div>
+
+      <!-- line -->
+      <hr class="w-full mt-6 border-gray-200">
+
+      <!-- Colors -->
+      <div class="mt-4">
+        <p class="text-gray-500 satoshi text-sm font-medium">Select Colors</p>
+        <div class="flex gap-3.5 mt-3">
+          <button
+            class="w-9 h-9 rounded-full bg-[#4F5A45] flex items-center justify-center cursor-pointer border-2 border-transparent focus:border-black transition-all">
+            <i data-lucide="check" class="text-white h-4 w-4"></i>
+          </button>
+          <button
+            class="w-9 h-9 rounded-full bg-[#314F4A] cursor-pointer border-2 border-transparent focus:border-black transition-all"></button>
+          <button
+            class="w-9 h-9 rounded-full bg-[#31344F] cursor-pointer border-2 border-transparent focus:border-black transition-all"></button>
+        </div>
+      </div>
+
+      <!-- line -->
+      <hr class="mt-6 border-gray-200 w-full">
+
+      <!-- size -->
+      <div class="mt-4">
+        <p class="text-gray-500 satoshi text-sm font-medium">Choose Size</p>
+        <div class="flex flex-wrap gap-2 md:gap-3 mt-3">
+          <button
+            class="bg-[#F0F0F0] hover:bg-black hover:text-white transition-colors text-gray-600 py-2.5 px-5 rounded-full text-sm font-medium cursor-pointer">Small</button>
+          <button
+            class="bg-[#F0F0F0] hover:bg-black hover:text-white transition-colors text-gray-600 py-2.5 px-5 rounded-full text-sm font-medium cursor-pointer">Medium</button>
+          <button class="bg-black text-white py-2.5 px-5 rounded-full text-sm font-medium cursor-pointer">Large</button>
+          <button
+            class="bg-[#F0F0F0] hover:bg-black hover:text-white transition-colors text-gray-600 py-2.5 px-5 rounded-full text-sm font-medium cursor-pointer">X-Large</button>
+        </div>
+      </div>
+
+      <!-- line -->
+      <hr class="mt-6 border-gray-200 w-full">
+
+      <!-- cart and quantity -->
+      <div class="flex gap-3 md:gap-5 mt-6 items-center w-full">
+        <!-- Quantity Selector -->
+        <div class="flex items-center justify-between w-[35%] md:w-40 h-12 bg-[#F0F0F0] rounded-full px-4 md:px-6">
+          <button class="text-2xl text-black hover:text-gray-600 focus:outline-none cursor-pointer">-</button>
+          <span class="text-base font-bold text-black satoshi">1</span>
+          <button class="text-xl text-black hover:text-gray-600 focus:outline-none cursor-pointer">+</button>
+        </div>
+        <!-- Add to Cart Button -->
+        <button
+          class="flex-1 h-12 bg-black hover:bg-neutral-800 text-white rounded-full font-medium satoshi transition-colors cursor-pointer">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Review Tabs -->
+  <div class="mt-16 w-[90%] max-w-7xl mx-auto">
+    <div
+      class="flex justify-between md:justify-center md:gap-40 text-center text-sm md:text-lg border-b border-gray-200">
+      <a href="#" class="flex-1 md:flex-none pb-4 text-gray-500 hover:text-black satoshi transition-colors">Product
+        Details</a>
+      <a href="#" class="flex-1 md:flex-none pb-4 border-b-2 border-black font-semibold text-black satoshi">Rating &
+        Reviews</a>
+      <a href="#" class="flex-1 md:flex-none pb-4 text-gray-500 hover:text-black satoshi transition-colors">FAQs</a>
+    </div>
+  </div>
+
+  <!-- Reviews Header -->
+  <div class="flex justify-between items-center w-[90%] max-w-7xl mx-auto mt-10">
+    <div class="flex items-end gap-1.5 md:gap-2">
+      <h2 class="text-xl md:text-2xl font-bold text-black satoshi">All Reviews</h2>
+      <span class="text-sm md:text-base text-gray-500 satoshi font-normal">(451)</span>
+    </div>
+    <div class="flex items-center gap-2 md:gap-3">
+      <!-- Filter Button -->
+      <button
+        class="w-10 h-10 md:w-12 md:h-12 bg-[#F0F0F0] hover:bg-gray-200 rounded-full flex items-center justify-center cursor-pointer transition-colors">
+        <i data-lucide="sliders-horizontal" class="w-4 h-4 md:w-5 md:h-5 text-black"></i>
+      </button>
+      <!-- Sort Dropdown (Desktop Only) -->
+      <button
+        class="hidden md:flex items-center justify-between gap-3 px-5 py-3 bg-[#F0F0F0] hover:bg-gray-200 rounded-full cursor-pointer text-sm font-semibold satoshi transition-colors">
+        <span>Latest</span>
+        <i data-lucide="chevron-down" class="w-4 h-4 text-black"></i>
+      </button>
+      <!-- Write a Review Button -->
+      <button
+        class="bg-black hover:bg-neutral-800 text-white text-xs md:text-sm px-4 py-2.5 md:px-6 md:py-3 rounded-full font-medium satoshi transition-colors cursor-pointer">
+        Write a Review
+      </button>
+    </div>
+  </div>
+
+  <!-- Reviews Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-[90%] max-w-7xl mx-auto mt-8">
+    <!-- Review 1 -->
+    <div class="border border-gray-200 rounded-2xl p-5 md:p-6 flex flex-col justify-between">
+      <div>
+        <div class="flex justify-between items-center w-full">
+          <div class="text-yellow-400 text-lg md:text-xl">★★★★⯪</div>
+          <button class="text-gray-400 hover:text-black cursor-pointer"><i data-lucide="ellipsis"></i></button>
+        </div>
+        <div class="flex items-center gap-1.5 mt-3">
+          <h3 class="font-bold text-base md:text-lg text-black satoshi">Samantha D.</h3>
+          <div class="flex items-center justify-center w-5 h-5 bg-[#01AB31] rounded-full text-white">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+        <p class="text-gray-500 text-sm md:text-base mt-3 leading-relaxed">
+          "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow
+          designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
+        </p>
+      </div>
+      <p class="text-gray-400 text-xs md:text-sm font-semibold mt-4">
+        Posted on August 14, 2023
+      </p>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="border border-gray-200 rounded-2xl p-5 md:p-6 flex flex-col justify-between">
+      <div>
+        <div class="flex justify-between items-center w-full">
+          <div class="text-yellow-400 text-lg md:text-xl">★★★★</div>
+          <button class="text-gray-400 hover:text-black cursor-pointer"><i data-lucide="ellipsis"></i></button>
+        </div>
+        <div class="flex items-center gap-1.5 mt-3">
+          <h3 class="font-bold text-base md:text-lg text-black satoshi">Alex M.</h3>
+          <div class="flex items-center justify-center w-5 h-5 bg-[#01AB31] rounded-full text-white">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+        <p class="text-gray-500 text-sm md:text-base mt-3 leading-relaxed">
+          "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a
+          UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from
+          me."
+        </p>
+      </div>
+      <p class="text-gray-400 text-xs md:text-sm font-semibold mt-4">
+        Posted on August 15, 2023
+      </p>
+    </div>
+
+    <!-- Review 3 -->
+    <div class="border border-gray-200 rounded-2xl p-5 md:p-6 flex flex-col justify-between">
+      <div>
+        <div class="flex justify-between items-center w-full">
+          <div class="text-yellow-400 text-lg md:text-xl">★★★★★</div>
+          <button class="text-gray-400 hover:text-black cursor-pointer"><i data-lucide="ellipsis"></i></button>
+        </div>
+        <div class="flex items-center gap-1.5 mt-3">
+          <h3 class="font-bold text-base md:text-lg text-black satoshi">Ethan R.</h3>
+          <div class="flex items-center justify-center w-5 h-5 bg-[#01AB31] rounded-full text-white">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+        <p class="text-gray-500 text-sm md:text-base mt-3 leading-relaxed">
+          "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern
+          caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."
+        </p>
+      </div>
+      <p class="text-gray-400 text-xs md:text-sm font-semibold mt-4">
+        Posted on August 16, 2023
+      </p>
+    </div>
+
+    <!-- Review 4 -->
+    <div class="border border-gray-200 rounded-2xl p-5 md:p-6 flex flex-col justify-between">
+      <div>
+        <div class="flex justify-between items-center w-full">
+          <div class="text-yellow-400 text-lg md:text-xl">★★★★★</div>
+          <button class="text-gray-400 hover:text-black cursor-pointer"><i data-lucide="ellipsis"></i></button>
+        </div>
+        <div class="flex items-center gap-1.5 mt-3">
+          <h3 class="font-bold text-base md:text-lg text-black satoshi">Olivia P.</h3>
+          <div class="flex items-center justify-center w-5 h-5 bg-[#01AB31] rounded-full text-white">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+        <p class="text-gray-500 text-sm md:text-base mt-3 leading-relaxed">
+          "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those
+          principles but also feels great to wear. It's evident that the designer poured their creativity into making
+          this t-shirt stand out."
+        </p>
+      </div>
+      <p class="text-gray-400 text-xs md:text-sm font-semibold mt-4">
+        Posted on August 17, 2023
+      </p>
+    </div>
+
+    <!-- Review 5 -->
+    <div class="border border-gray-200 rounded-2xl p-5 md:p-6 flex flex-col justify-between">
+      <div>
+        <div class="flex justify-between items-center w-full">
+          <div class="text-yellow-400 text-lg md:text-xl">★★★★★</div>
+          <button class="text-gray-400 hover:text-black cursor-pointer"><i data-lucide="ellipsis"></i></button>
+        </div>
+        <div class="flex items-center gap-1.5 mt-3">
+          <h3 class="font-bold text-base md:text-lg text-black satoshi">Liam K.</h3>
+          <div class="flex items-center justify-center w-5 h-5 bg-[#01AB31] rounded-full text-white">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+        <p class="text-gray-500 text-sm md:text-base mt-3 leading-relaxed">
+          "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about
+          the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion."
+        </p>
+      </div>
+      <p class="text-gray-400 text-xs md:text-sm font-semibold mt-4">
+        Posted on August 18, 2023
+      </p>
+    </div>
+
+    <!-- Review 6 -->
+    <div class="border border-gray-200 rounded-2xl p-5 md:p-6 flex flex-col justify-between">
+      <div>
+        <div class="flex justify-between items-center w-full">
+          <div class="text-yellow-400 text-lg md:text-xl">★★★★★</div>
+          <button class="text-gray-400 hover:text-black cursor-pointer"><i data-lucide="ellipsis"></i></button>
+        </div>
+        <div class="flex items-center gap-1.5 mt-3">
+          <h3 class="font-bold text-base md:text-lg text-black satoshi">Ava H.</h3>
+          <div class="flex items-center justify-center w-5 h-5 bg-[#01AB31] rounded-full text-white">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+        <p class="text-gray-500 text-sm md:text-base mt-3 leading-relaxed satoshi">
+          "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and
+          thoughtful layout of the design make this shirt a conversation starter."
+        </p>
+      </div>
+      <p class="text-gray-400 text-xs md:text-sm font-semibold mt-4">
+        Posted on August 19, 2023
+      </p>
+    </div>
+  </div>
+
+  <!-- Load More Reviews Button -->
+  <div class="flex justify-center mt-10">
+    <button
+      class="border border-gray-200 hover:bg-black hover:text-white transition-colors px-10 py-3 rounded-full text-sm font-medium satoshi cursor-pointer">
+      Load More Reviews
+    </button>
+  </div>
+
+  <!-- YOU MIGHT ALSO LIKE Section -->
+  <div class="mt-20 w-[90%] max-w-7xl mx-auto">
+    <h2 class="logo text-3xl md:text-[40px] font-black text-center text-black">
+      YOU MIGHT ALSO LIKE
+    </h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-10 md:mt-14">
+      <!-- Product 1 (Shown on Desktop & Mobile) -->
+      <div class="flex flex-col">
+        <div
+          class="w-full aspect-[1/1.1] bg-[#F0EEED] rounded-[20px] md:rounded-3xl flex justify-center items-center overflow-hidden cursor-pointer">
+          <img src="./images/m5.png"
+            class="w-full h-full object-contain p-4 md:p-6 hover:scale-105 transition-transform duration-300">
+        </div>
+        <h3 class="font-bold text-sm md:text-lg mt-3 text-black satoshi truncate">Polo with Contrast Trims</h3>
+        <div class="flex gap-1.5 mt-1 items-center text-amber-400">
+          <span class="text-base md:text-xl">★★★★</span>
+          <p class="text-xs md:text-sm text-black satoshi -ml-1 font-normal">4.0/<span class="text-gray-400">5</span>
+          </p>
+        </div>
+        <div class="flex items-center gap-2 mt-2">
+          <span class="text-base md:text-2xl font-bold text-black satoshi">$212</span>
+          <span class="text-sm md:text-lg text-gray-400 line-through font-bold satoshi">$242</span>
+          <span
+            class="bg-red-100 text-red-500 px-2 py-0.5 rounded-full text-[10px] md:text-xs font-semibold">-20%</span>
+        </div>
+      </div>
+
+      <!-- Product 2 (Shown on Desktop & Mobile) -->
+      <div class="flex flex-col">
+        <div
+          class="w-full aspect-[1/1.1] bg-[#F0EEED] rounded-[20px] md:rounded-3xl flex justify-center items-center overflow-hidden cursor-pointer">
+          <img src="./images/m7.png"
+            class="w-full h-full object-contain p-4 md:p-6 hover:scale-105 transition-transform duration-300">
+        </div>
+        <h3 class="font-bold text-sm md:text-lg mt-3 text-black satoshi truncate">Gradient Graphic T-Shirt</h3>
+        <div class="flex gap-1.5 mt-1 items-center text-amber-400">
+          <span class="text-base md:text-xl">★★★</span>
+          <span class="text-base md:text-xl overflow-hidden w-2 -ml-1">★</span>
+          <p class="text-xs md:text-sm text-black satoshi -ml-1 font-normal">3.5/<span class="text-gray-400">5</span>
+          </p>
+        </div>
+        <div class="flex items-center gap-2 mt-2">
+          <span class="text-base md:text-2xl font-bold text-black satoshi">$145</span>
+        </div>
+      </div>
+
+      <!-- Product 3 (Desktop Only) -->
+      <div class="hidden md:flex flex-col">
+        <div
+          class="w-full aspect-[1/1.1] bg-[#F0EEED] rounded-3xl flex justify-center items-center overflow-hidden cursor-pointer">
+          <img src="./images/m8.png"
+            class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-300">
+        </div>
+        <h3 class="font-bold text-lg mt-3 text-black satoshi truncate">Polo with Tipping Details</h3>
+        <div class="flex gap-1.5 mt-1 items-center text-amber-400">
+          <span class="text-xl">★★★★</span>
+          <span class="text-xl overflow-hidden w-2 -ml-1">★</span>
+          <p class="text-sm text-black satoshi -ml-1 font-normal">4.5/<span class="text-gray-400">5</span></p>
+        </div>
+        <div class="flex items-center gap-2 mt-2">
+          <span class="text-2xl font-bold text-black satoshi">$180</span>
+        </div>
+      </div>
+
+      <!-- Product 4 (Desktop Only) -->
+      <div class="hidden md:flex flex-col">
+        <div
+          class="w-full aspect-[1/1.1] bg-[#F0EEED] rounded-3xl flex justify-center items-center overflow-hidden cursor-pointer">
+          <img src="./images/m9.png"
+            class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-300">
+        </div>
+        <h3 class="font-bold text-lg mt-3 text-black satoshi truncate">Black Striped T-Shirt</h3>
+        <div class="flex gap-1.5 mt-1 items-center text-amber-400">
+          <span class="text-xl">★★★★★</span>
+          <p class="text-sm text-black satoshi -ml-1 font-normal">5.0/<span class="text-gray-400">5</span></p>
+        </div>
+        <div class="flex items-center gap-2 mt-2">
+          <span class="text-2xl font-bold text-black satoshi">$120</span>
+          <span class="text-lg text-gray-400 line-through font-bold satoshi">$150</span>
+          <span class="bg-red-100 text-red-500 px-2 py-0.5 rounded-full text-xs font-semibold">-20%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spacer to prevent Newsletter overlapping elements below inappropriately -->
+  <div class="h-20 md:h-28"></div>
+
+  <!-- Newsletter Block -->
+  <div class="relative w-[90%] max-w-7xl mx-auto z-10 -mb-28 md:-mb-20">
+    <div
+      class="flex flex-col lg:flex-row justify-between items-center bg-black rounded-[20px] md:rounded-3xl p-6 md:p-12 gap-6 lg:gap-8 text-white">
+      <h2
+        class="w-full lg:w-[55%] text-left font-black text-2xl md:text-3xl lg:text-[40px] leading-tight logo uppercase">
+        Stay up to date about our latest offers
+      </h2>
+      <div class="flex flex-col gap-3 w-full lg:w-auto min-w-full sm:min-w-[350px]">
+        <!-- Input -->
+        <div class="relative w-full">
+          <i data-lucide="mail" class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5"></i>
+          <input type="email" placeholder="Enter your email address"
+            class="w-full pl-12 pr-4 h-11 md:h-12 bg-white text-black rounded-full placeholder-gray-400 satoshi text-sm focus:outline-none">
+        </div>
+        <!-- Button -->
+        <button
+          class="w-full h-11 md:h-12 bg-white hover:bg-gray-100 text-black font-semibold rounded-full text-sm satoshi transition-colors cursor-pointer">
+          Subscribe to Newsletter
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-[#F0F0F0] pt-40 pb-10 mt-0 satoshi text-sm border-t border-gray-100">
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-8 w-[90%] max-w-7xl mx-auto">
+      <!-- Col 1 (Logo + Socials) -->
+      <div class="col-span-2 md:col-span-1 flex flex-col pr-0 md:pr-4">
+        <h2 class="logo text-3xl md:text-4xl font-black text-black">SHOP.CO</h2>
+        <p class="text-gray-500 mt-4 text-sm leading-relaxed max-w-[280px]">
+          We have clothes that suits your style and which you're proud to wear.
+        </p>
+        <!-- Social Media Icons -->
+        <div class="flex gap-3 mt-6">
+          <a href="#"
+            class="w-7 h-7 bg-white hover:bg-white text-black hover:text-black rounded-full flex items-center justify-center border border-gray-200 transition-colors shadow-sm">
+            <img src="./images/Vector.png" class="w-3.5 h-3.5"></i>
+          </a>
+          <a href="#"
+            class="w-7 h-7 bg-black hover:bg-white text-white hover:text-black rounded-full flex items-center justify-center border border-gray-200 transition-colors shadow-sm">
+            <img src="./images/2.png" class="w-6.5 h-6.5"></i>
+          </a>
+          <a href="#"
+            class="w-7 h-7 bg-white hover:bg-white text-black hover:text-black rounded-full flex items-center justify-center border border-gray-200 transition-colors shadow-sm">
+            <img src="./images/Group.png" class="w-3.5 h-3.5"></i>
+          </a>
+          <a href="#"
+            class="w-7 h-7 bg-white hover:bg-white text-black hover:text-balance rounded-full flex items-center justify-center border border-gray-200 transition-colors shadow-sm">
+            <img src="./images/logo-github 1.png" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2 (COMPANY) -->
+      <div class="col-span-1">
+        <h3 class="font-bold text-black tracking-widest uppercase">Company</h3>
+        <ul class="space-y-3 md:space-y-4 mt-5 text-gray-500">
+          <li><a href="#" class="hover:text-black transition-colors">About</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Features</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Works</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Career</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 (HELP) -->
+      <div class="col-span-1">
+        <h3 class="font-bold text-black tracking-widest uppercase">Help</h3>
+        <ul class="space-y-3 md:space-y-4 mt-5 text-gray-500">
+          <li><a href="#" class="hover:text-black transition-colors">Customer Support</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Delivery Details</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Terms & Conditions</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 (FAQ) -->
+      <div class="col-span-1">
+        <h3 class="font-bold text-black tracking-widest uppercase">FAQ</h3>
+        <ul class="space-y-3 md:space-y-4 mt-5 text-gray-500">
+          <li><a href="#" class="hover:text-black transition-colors">Account</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Manage Deliveries</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Orders</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Payments</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 5 (RESOURCES) -->
+      <div class="col-span-1">
+        <h3 class="font-bold text-black tracking-widest uppercase">Resources</h3>
+        <ul class="space-y-3 md:space-y-4 mt-5 text-gray-500">
+          <li><a href="#" class="hover:text-black transition-colors">Free eBooks</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Development Tutorial</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">How to Blog</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Youtube Playlist</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright and Payment Icons -->
+    <hr class="w-[90%] max-w-7xl mx-auto mt-10 border-gray-200">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 w-[90%] max-w-7xl mx-auto mt-6">
+      <p class="text-gray-400 text-sm">Shop.co © 2000-2023, All Rights Reserved</p>
+      <div class="flex gap-3">
+        <div
+          class="flex justify-center items-center rounded-lg w-[46px] h-[30px] bg-white border border-gray-100 shadow-sm">
+          <img src="./images/Visa.png" class="w-8 object-contain">
+        </div>
+        <div
+          class="flex justify-center items-center rounded-lg w-[46px] h-[30px] bg-white border border-gray-100 shadow-sm">
+          <img src="./images/Mastercard.png" class="w-6 object-contain">
+        </div>
+        <div
+          class="flex justify-center items-center rounded-lg w-[46px] h-[30px] bg-white border border-gray-100 shadow-sm">
+          <img src="./images/Paypal.png" class="w-8 object-contain">
+        </div>
+        <div
+          class="flex justify-center items-center rounded-lg w-[46px] h-[30px] bg-white border border-gray-100 shadow-sm">
+          <img src="./images/ Pay.png" class="w-6 object-contain">
+        </div>
+        <div
+          class="flex justify-center items-center rounded-lg w-[46px] h-[30px] bg-white border border-gray-100 shadow-sm">
+          <img src="./images/G Pay.png" class="w-7 object-contain">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

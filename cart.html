@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  <title>SHOP.CO</title>
+  <link rel="stylesheet" href="global.css">
+  <script type="module">
+    import { createIcons, icons } from 'lucide';
+    createIcons({ icons });
+
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="relative w-full bg-black text-white py-2 px-4 flex items-center justify-center text-xs md:text-sm">
+    <p class="text-center flex-1">
+      Sign up and get 20% off to your first order. <a href="#" class="underline font-bold hover:text-gray-200">Sign Up
+        Now</a>
+    </p>
+    <button class="absolute right-4 md:right-12 focus:outline-none  md:block">
+      <i data-lucide="x" class="w-4 h-4 text-white hover:text-gray-300"></i>
+    </button>
+  </div>
+  <header class="w-full bg-white  border-gray-100">
+    <nav class="flex items-center justify-between w-[90%] max-w-7xl h-16 md:h-20 mx-auto gap-4">
+      <div class="flex items-center gap-4">
+        <!-- Hamburger Menu Button -->
+        <button class="block md:hidden text-black focus:outline-none cursor-pointer">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+        <!-- Logo -->
+        <a href="#" class="logo font-extrabold text-3xl md:text-[32px]">SHOP.CO</a>
+      </div>
+
+      <!-- Links (Desktop Only) -->
+      <div class="hidden md:flex items-center gap-6 lg:gap-8 satoshi text-sm md:text-base font-medium text-black">
+        <a href="#" class="flex items-center gap-1 hover:text-gray-600 transition-colors">
+          <span>Shop</span>
+          <i data-lucide="chevron-down" class="w-4 h-4"></i>
+        </a>
+        <a href="#" class="hover:text-gray-600 transition-colors">On Sale</a>
+        <a href="#" class="hover:text-gray-600 transition-colors">New Arrivals</a>
+        <a href="#" class="hover:text-gray-600 transition-colors">Brands</a>
+      </div>
+
+      <!-- Search Box (Desktop Only) -->
+      <div class="hidden md:block flex-1 max-w-[600px] mx-4 lg:mx-8">
+        <div class="relative w-full">
+          <i data-lucide="search" class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5"></i>
+          <input type="text" placeholder="Search for products..."
+            class="w-full bg-[#F0F0F0] rounded-full pl-12 pr-4 py-2.5 text-sm focus:outline-none text-black placeholder-gray-400 satoshi">
+        </div>
+      </div>
+
+      <!-- Icons -->
+      <div class="flex items-center gap-3.5 md:gap-5 text-black">
+        <!-- Search Button (Mobile Only) -->
+        <button class="block md:hidden focus:outline-none cursor-pointer">
+          <i data-lucide="search" class="w-6 h-6"></i>
+        </button>
+        <!-- Cart -->
+        <a href="#" class="focus:outline-none cursor-pointer hover:text-gray-600 transition-colors">
+          <i data-lucide="shopping-cart" class="w-6 h-6"></i>
+        </a>
+        <!-- Profile -->
+        <a href="#" class="focus:outline-none cursor-pointer hover:text-gray-600 transition-colors">
+          <i data-lucide="circle-user-round" class="w-6 h-6"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main class="m-0 container mx-auto border-t border-gray-200 p-2">
+    <div>
+      <div class="flex ">
+        <span class="text-gray-500 font-sans">Home</span>
+        <i data-lucide="chevron-right" class="text-gray-500 items-center"></i>
+        <span class="font-sans"> Cart</span>
+      </div>
+      <h1 class="font-[montserrat] font-extrabold  text-[40px] mt-5"> YOUR CART</h1>
+    </div>
+    <div class=" flex flex-col md:flex-row gap-3 lg:flex">
+      <!-- 1st box -->
+      <div class=" flex flex-col rounded-[20px] border border-gray-300 gap-2 p-4 ">
+        <!-- 1st -->
+        <div class="flex   rounded-[20px] gap-2 ">
+          <div class="flex flex-col ">
+            <img src="./images/p-1.png" class="md:p-2 rounded-[20px] h-25 w-30 md:h-35 md:w-33 object-cover">
+          </div>
+          <div class="flex justify-between w-full md:w-[546px] ">
+            <div class="flex  flex-col gap-2">
+              <div class="flex flex-col  md:p-2">
+                <p class="font-semibold text-md md:text-xl"> Gradient Graphic T-Shirt</p>
+                <div class="flex gap-1">
+                  <span class=" flex  text-xs md:text-sm">Size : </span>
+                  <p class=" text-xs md:text-sm text-gray-600 "> Large</p>
+                </div>
+                <div class="flex gap-1 ">
+                  <span class=" flex text-xs md:text-sm">Color : </span>
+                  <p class=" text-xs md:text-sm text-gray-600 "> White</p>
+                </div>
+              </div>
+              <div class=" font-bold text-2xl md:p-2">$145</div>
+            </div>
+            <div class="flex flex-col justify-between md:p-3">
+              <div class="flex justify-end">
+                <i data-lucide="trash-2" class="flex md:text-xl text-red-600 gap-2  "></i>
+              </div>
+              <div class=" flex justify-end gap-3 md:gap-5 p-1 md:p-2  bg-gray-200 rounded-3xl">
+                <i data-lucide="minus" class="size-5 flex items-center justify-center"></i>
+                <p>1</p>
+                <i data-lucide="plus" class="size-5 flex items-center justify-center"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <hr class="text-gray-200">
+        <!-- 2nd -->
+        <div class="flex   rounded-[20px] gap-2">
+          <div class="flex flex-col">
+            <img src="./images/p-2.png" class="md:p-2 rounded-[20px] h-25 w-30 md:h-35 md:w-33 object-cover">
+          </div>
+          <div class="flex justify-between w-full md:w-[546px] ">
+            <div class="flex  flex-col gap-2">
+              <div class="flex flex-col  md:p-2">
+                <p class="font-semibold text-md md:text-xl"> Checked Shirt</p>
+                <div class="flex gap-1">
+                  <span class=" flex text-xs md:text-sm">Size : </span>
+                  <p class="text-xs md:text-sm text-gray-600 "> Medium</p>
+                </div>
+                <div class="flex gap-1 ">
+                  <span class=" flex text-xs md:text-sm">Color : </span>
+                  <p class="text-xs md:text-sm text-gray-600 "> Red</p>
+                </div>
+              </div>
+              <div class=" font-bold text-2xl md:p-2">$180</div>
+            </div>
+            <div class="flex flex-col justify-between md:p-3">
+              <div class="flex justify-end">
+                <i data-lucide="trash-2" class="flex  md:text-xl text-red-600 gap-2  "></i>
+              </div>
+              <div class=" flex justify-between gap-3 md:gap-5 p-1 md:p-2  bg-gray-200 rounded-3xl">
+                <i data-lucide="minus" class="size-5 flex items-center justify-center"></i>
+                <p>1</p>
+                <i data-lucide="plus" class="size-5 flex items-center justify-center"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <hr class="text-gray-200">
+
+        <!-- 3rd -->
+        <div class="flex   rounded-[20px] gap-2 ">
+          <div class="flex flex-col">
+            <img src="./images/p-3.png" class="md:p-2 rounded-[20px]  h-25 w-30 md:h-35 md:w-33 object-cover">
+          </div>
+          <div class="flex justify-between w-full md:w-[546px] ">
+            <div class="flex  flex-col gap-2">
+              <div class="flex flex-col  md:p-2">
+                <p class="font-semibold text-md md:text-xl"> Skinny Fit Jeans</p>
+                <div class="flex gap-1">
+                  <span class=" flex text-xs md:text-sm">Size : </span>
+                  <p class="text-xs md:text-sm text-gray-600 "> Large</p>
+                </div>
+                <div class="flex gap-1 ">
+                  <span class=" flex text-xs md:text-sm">Color : </span>
+                  <p class="text-xs md:text-sm text-gray-600 "> Blue</p>
+                </div>
+              </div>
+              <div class=" font-bold text-2xl md:p-2">$240</div>
+            </div>
+            <div class="flex flex-col justify-between md:p-3">
+              <div class="flex justify-end">
+                <i data-lucide="trash-2" class="flex  text-xl text-red-600 gap-2  "></i>
+              </div>
+              <div class=" flex justify-between gap-3 md:gap-5 p-1 md:p-2  bg-gray-200 rounded-3xl">
+                <i data-lucide="minus" class="size-5 flex items-center justify-center"></i>
+                <p>1</p>
+                <i data-lucide="plus" class="size-5 flex items-center justify-center"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- 2nd box -->
+      <div class=" flex flex-col rounded-[20px] border border-gray-200 md:w-[505px] h-[428px] p-3 gap-4">
+        <div class="flex ">
+          <h1 class="flex justify-between font-bold text-2xl p-1 ">Order Summary</h1>
+        </div>
+        <div class="flex justify-between">
+          <div class=" flex flex-col text-gray-600 p-2  gap-5">
+            <p>Subtotal</p>
+            <p>Discount (-20%)</p>
+            <p>Delivery Fee</p>
+          </div>
+          <div class="flex flex-col gap-5 items-center">
+
+            <p class="font-bold text-xl">$565</p>
+            <p class="font-semibold text-xl text-red-600">-$113</p>
+            <p class="font-bold text-xl">$15</p>
+          </div> 
+        </div>
+        <div class="border border-gray-200"></div>
+        <div class="flex justify-between p-2">
+          <p class="font-semibold ">Total</p>
+          <p class="font-bold text-2xl">$467</p>
+        </div>
+        <div class="flex justify-between">
+          <div class="flex items-center justify-start rounded-full bg-gray-200  w-2/3 md:w-92 gap-2 p-2">
+            <i data-lucide="tag" class=" size-6 p-1  text-gray-600"></i>
+            <span class="text-gray-600 text-xs">Add promo code</span>
+          </div>
+          <div class="flex items-center justify-center rounded-full  text-white bg-black text-xs w-25 p-2">
+            Apply</div>
+        </div>
+        <div class="flex justify-center bg-black rounded-4xl text-white gap-3 p-3">
+          <span>Go to checkout</span>
+          <i data-lucide="move-right" class="flex size"></i>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+    <div class="h-20 md:h-28"></div>
+
+    <!-- Newsletter Block -->
+    <div class="relative w-[90%] max-w-7xl mx-auto z-10 -mb-28 md:-mb-20">
+      <div
+        class="flex flex-col lg:flex-row justify-between items-center bg-black rounded-[20px] md:rounded-3xl p-6 md:p-12 gap-6 lg:gap-8 text-white">
+        <h2
+          class="w-full lg:w-[55%] text-left font-black text-2xl md:text-3xl lg:text-[40px] leading-tight logo uppercase">
+          Stay up to date about our latest offers
+        </h2>
+        <div class="flex flex-col gap-3 w-full lg:w-auto min-w-full sm:min-w-[350px]">
+          <!-- Input -->
+          <div class="relative w-full">
+            <i data-lucide="mail" class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5"></i>
+            <input type="email" placeholder="Enter your email address"
+              class="w-full pl-12 pr-4 h-11 md:h-12 bg-white text-black rounded-full placeholder-gray-400 satoshi text-sm focus:outline-none">
+          </div>
+          <!-- Button -->
+          <button
+            class="w-full h-11 md:h-12 bg-white hover:bg-gray-100 text-black font-semibold rounded-full text-sm satoshi transition-colors cursor-pointer">
+            Subscribe to Newsletter
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#F0F0F0] pt-40 pb-10 mt-0 satoshi text-sm border-t border-gray-100">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-8 w-[90%] max-w-7xl mx-auto">
+        <!-- Col 1 (Logo + Socials) -->
+        <div class="col-span-2 md:col-span-1 flex flex-col pr-0 md:pr-4">
+          <h2 class="logo text-3xl md:text-4xl font-black text-black">SHOP.CO</h2>
+          <p class="text-gray-500 mt-4 text-sm leading-relaxed max-w-[280px]">
+            We have clothes that suits your style and which you're proud to wear.
+          </p>
+          <!-- Social Media Icons -->
+          <div class="flex gap-3 mt-6">
+            <a href="#"
+              class="w-7 h-7 bg-white hover:bg-white text-black hover:text-black rounded-full flex items-center justify-center border border-gray-200 transition-colors shadow-sm">
+              <img src="./images/Vector.png" class="w-3.5 h-3.5"></i>
+            </a>
+            <a href="#"
+              class="w-7 h-7 bg-black hover:bg-white text-white hover:text-black rounded-full flex items-center justify-center border border-gray-200 transition-colors shadow-sm">
+              <img src="./images/2.png" class="w-6.5 h-6.5"></i>
+            </a>
+            <a href="#"
+              class="w-7 h-7 bg-white hover:bg-white text-black hover:text-black rounded-full flex items-center justify-center border border-gray-200 transition-colors shadow-sm">
+              <img src="./images/Group.png" class="w-3.5 h-3.5"></i>
+            </a>
+            <a href="#"
+              class="w-7 h-7 bg-white hover:bg-white text-black hover:text-balance rounded-full flex items-center justify-center border border-gray-200 transition-colors shadow-sm">
+              <img src="./images/logo-github 1.png" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2 (COMPANY) -->
+        <div class="col-span-1">
+          <h3 class="font-bold text-black tracking-widest uppercase">Company</h3>
+          <ul class="space-y-3 md:space-y-4 mt-5 text-gray-500">
+            <li><a href="#" class="hover:text-black transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Features</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Works</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Career</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 (HELP) -->
+        <div class="col-span-1">
+          <h3 class="font-bold text-black tracking-widest uppercase">Help</h3>
+          <ul class="space-y-3 md:space-y-4 mt-5 text-gray-500">
+            <li><a href="#" class="hover:text-black transition-colors">Customer Support</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Delivery Details</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Terms & Conditions</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 (FAQ) -->
+        <div class="col-span-1">
+          <h3 class="font-bold text-black tracking-widest uppercase">FAQ</h3>
+          <ul class="space-y-3 md:space-y-4 mt-5 text-gray-500">
+            <li><a href="#" class="hover:text-black transition-colors">Account</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Manage Deliveries</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Orders</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Payments</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5 (RESOURCES) -->
+        <div class="col-span-1">
+          <h3 class="font-bold text-black tracking-widest uppercase">Resources</h3>
+          <ul class="space-y-3 md:space-y-4 mt-5 text-gray-500">
+            <li><a href="#" class="hover:text-black transition-colors">Free eBooks</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Development Tutorial</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">How to Blog</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Youtube Playlist</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright and Payment Icons -->
+      <hr class="w-[90%] max-w-7xl mx-auto mt-10 border-gray-200">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4 w-[90%] max-w-7xl mx-auto mt-6">
+        <p class="text-gray-400 text-sm">Shop.co © 2000-2023, All Rights Reserved</p>
+        <div class="flex gap-3">
+          <div
+            class="flex justify-center items-center rounded-lg w-[46px] h-[30px] bg-white border border-gray-100 shadow-sm">
+            <img src="./images/Visa.png" class="w-8 object-contain">
+          </div>
+          <div
+            class="flex justify-center items-center rounded-lg w-[46px] h-[30px] bg-white border border-gray-100 shadow-sm">
+            <img src="./images/Mastercard.png" class="w-6 object-contain">
+          </div>
+          <div
+            class="flex justify-center items-center rounded-lg w-[46px] h-[30px] bg-white border border-gray-100 shadow-sm">
+            <img src="./images/Paypal.png" class="w-8 object-contain">
+          </div>
+          <div
+            class="flex justify-center items-center rounded-lg w-[46px] h-[30px] bg-white border border-gray-100 shadow-sm">
+            <img src="./images/ Pay.png" class="w-6 object-contain">
+          </div>
+          <div
+            class="flex justify-center items-center rounded-lg w-[46px] h-[30px] bg-white border border-gray-100 shadow-sm">
+            <img src="./images/G Pay.png" class="w-7 object-contain">
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>

@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="global.css">
-
+ 
   <title>shop-co</title>
   <script type="module">
     import { createIcons, icons } from 'lucide';
@@ -36,7 +36,7 @@
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
         <!-- Logo -->
-        <a href="#" class="logo font-extrabold text-3xl md:text-[32px]">SHOP.CO</a>
+        <a href="#" class="logo font-black text-2xl md:text-[32px] text-black">SHOP.CO</a>
       </div>
 
       <!-- Links (Desktop Only) -->
@@ -51,7 +51,7 @@
       </div>
 
       <!-- Search Box (Desktop Only) -->
-      <div class="hidden md:block flex-1 max-w-[600px] mx-4 lg:mx-8">
+      <div class="hidden md:block flex-1 max-w-150 mx-4 lg:mx-8">
         <div class="relative w-full">
           <i data-lucide="search" class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5"></i>
           <input type="text" placeholder="Search for products..."
@@ -77,7 +77,7 @@
     </nav>
   </header>
 
-  <!-- Breadcrumbs -->
+  <!-- home/shop/men/t-shirts -->
   <div class="flex items-center gap-2 mt-5 md:mt-6 text-gray-500 w-[90%] max-w-7xl mx-auto satoshi text-xs md:text-sm">
     <a href="#" class="hover:text-black transition-colors">Home</a>
     <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-gray-400"></i>
@@ -89,45 +89,39 @@
   </div>
 
   <!-- Product Section -->
-  <main class="flex flex-col md:flex-row not-last-of-type: mt-6 gap-8 lg:gap-10 w-[90%] max-w-7xl mx-auto">
+  <main class="flex flex-col lg:flex-row mt-6 gap-8 lg:gap-10 w-[90%] max-w-7xl mx-auto">
     <!-- Left Images Area -->
     <div class="flex flex-col md:flex-row gap-4 w-full lg:w-[50%]">
       <!-- Thumbnails -->
-      <div class="flex flex-row md:flex-col gap-3 md:gap-4 order-2 md:order-1 w-full md:w-auto">
+      <div class="flex flex-row md:flex-col gap-3 md:gap-2 order-2 md:order-1 w-full md:w-auto">
         <div
-          class="flex-1 md:w-38 md:h-42 aspect-square md:aspect-auto border border-black rounded-2xl bg-[#F0EEED] flex justify-center items-center overflow-hidden cursor-pointer hover:border-black transition-colors">
-          <img src="./images/m2.png" class="">
+          class="flex-1 md:w-36 md:h-30 aspect-square md:aspect-auto border border-black rounded-2xl bg-[#F0EEED] flex justify-center items-center overflow-hidden">
+          <img src="./images/m1.png" class="w-full h-full object-contain p-2 md:p-4">
         </div>
         <div
-          class="flex-1 md:w-38 md:h-42 aspect-square md:aspect-auto rounded-2xl bg-[#F0EEED] flex justify-center items-center overflow-hidden ">
-          <img src="./images/m3.png" class="">
+          class="flex-1 md:w-36 md:h-30  md:aspect-auto rounded-2xl bg-[#F0EEED] flex justify-center items-center overflow-hidden cursor-pointer hover:border-black transition-colors">
+          <img src="./images/m3.png" class="w-[70%] object-contain">
         </div>
         <div
-          class="flex-1 md:w-38 md:h-42 aspect-square md:aspect-auto rounded-2xl bg-[#F0EEED] flex justify-center items-center overflow-hidden  ">
-          <img src="./images/m4.png" class="  relative  md:-top-3">
+          class="flex-1 md:w-36 md:h-30 aspect-square md:aspect-auto rounded-2xl bg-[#F0EEED] flex justify-center items-center overflow-hidden cursor-pointer hover:border-black transition-colors">
+          <img src="./images/m4.png" class="w-[80%] object-contain relative -top-1 md:-top-1.5 md:w-44 md:h-44.5 overflow-hidden">
         </div>
       </div>
 
       <!-- Main Product Image -->
       <div
-        class="order-1 md:order-2 flex-1 sm:h-[400px] md:h-[530px] bg-[#F0EEED] rounded-2xl flex justify-center items-center overflow-hidden">
-        <img src="./images/m1.png" class=" object-cover p-6 md:p-10">
+        class="order-1 md:order-2 flex-1 h-72.5 sm:h-100 md:h-135 bg-[#F0EEED] rounded-2xl flex justify-center items-center overflow-hidden">
+        <img src="./images/m1.png" class="w-full h-full object-contain p-6 md:p-10">
       </div>
     </div>
 
     <!-- Product Details Area -->
     <div class="flex flex-col w-full lg:w-[50%] mt-2">
-      <h1 class=" text-4xl md:text-[40px] leading-tight font-extrabold">ONE LIFE GRAPHIC T-SHIRT</h1>
+      <h1 class="logo text-3xl md:text-[40px] font-black leading-tight text-black">ONE LIFE GRAPHIC T-SHIRT</h1>
 
       <!-- rating stars -->
-      <div class="flex gap-2 mt-2 items-center">
-        <div class="text-xl md:text-2xl flex">
-          <i data-lucide="star" class="fill-amber-300 text-amber-300"></i>
-          <i data-lucide="star" class="fill-amber-300 text-amber-300"></i>
-          <i data-lucide="star" class="fill-amber-300 text-amber-300"></i>
-          <i data-lucide="star" class="fill-amber-300 text-amber-300"></i>
-          <i data-lucide="star-half" class="fill-amber-300 text-amber-300"></i>
-        </div>
+      <div class="flex gap-2 mt-2 items-center text-amber-400">
+        <span class="text-xl md:text-2xl">★★★★★</span>
         <p class="satoshi text-sm md:text-base text-black font-normal -ml-1">4.5/<span class="text-gray-400">5</span>
         </p>
       </div>
@@ -136,14 +130,14 @@
       <div class="satoshi flex gap-4 items-center mt-3">
         <h2 class="text-2xl md:text-3xl font-bold text-black">$260</h2>
         <h2 class="text-2xl md:text-3xl text-gray-400 line-through font-bold">$300</h2>
-        <div class="bg-red-100 text-red-500 px-3 py-1 rounded-full  md:text-sm font-semibold">
+        <div class="bg-red-100 text-red-500 px-3 py-1 rounded-full text-xs md:text-sm font-semibold">
           -40%
         </div>
       </div>
 
       <!-- description -->
       <div class="w-full mt-4">
-        <p class="satoshi text-gray-500 text-[13px] md:text-base ">
+        <p class="satoshi text-gray-500 text-sm md:text-base leading-relaxed">
           This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers
           superior comfort and style.
         </p>
@@ -171,7 +165,7 @@
       <hr class="mt-6 border-gray-200 w-full">
 
       <!-- size -->
-      <div class="mt-4">
+      <div class="mt-6">
         <p class="text-gray-500 satoshi text-sm font-medium">Choose Size</p>
         <div class="flex flex-wrap gap-2 md:gap-3 mt-3">
           <button
@@ -207,12 +201,12 @@
   <!-- Review Tabs -->
   <div class="mt-16 w-[90%] max-w-7xl mx-auto">
     <div
-      class="flex justify-between md:justify-center md:gap-40 text-center text-sm md:text-lg border-b border-gray-200">
-      <a href="#" class="flex-1 md:flex-none pb-4 text-gray-500 hover:text-black satoshi transition-colors">Product
+      class="flex justify-between md:justify-center md:gap-60 text-center text-xs gap-6 md:text-lg border-b border-gray-200">
+      <a href="#" class="flex-1 md:flex-none pb-4 text-gray-500 satoshi">Product
         Details</a>
-      <a href="#" class="flex-1 md:flex-none pb-4 border-b-2 border-black font-semibold text-black satoshi">Rating &
+      <a href="#" class="flex-1 md:flex-none pb-4 border-b-2 border-black w-80 font-semibold text-black satoshi">Rating &
         Reviews</a>
-      <a href="#" class="flex-1 md:flex-none pb-4 text-gray-500 hover:text-black satoshi transition-colors">FAQs</a>
+      <a href="#" class="flex-1 md:flex-none pb-4 text-gray-500 satoshi">FAQs</a>
     </div>
   </div>
 
@@ -248,8 +242,8 @@
     <div class="border border-gray-200 rounded-2xl p-5 md:p-6 flex flex-col justify-between">
       <div>
         <div class="flex justify-between items-center w-full">
-          <div class="text-yellow-400 text-lg md:text-xl">★★★★⯪</div>
-          <button class="text-gray-400 hover:text-black cursor-pointer"><i data-lucide="ellipsis"></i></button>
+          <div class="text-yellow-400 text-lg md:text-xl">★★★★⯨</div>
+          <button class="text-gray-400 hover:text-black hidden md:block cursor-pointer"><i data-lucide="ellipsis"></i></button>
         </div>
         <div class="flex items-center gap-1.5 mt-3">
           <h3 class="font-bold text-base md:text-lg text-black satoshi">Samantha D.</h3>
@@ -272,7 +266,7 @@
       <div>
         <div class="flex justify-between items-center w-full">
           <div class="text-yellow-400 text-lg md:text-xl">★★★★</div>
-          <button class="text-gray-400 hover:text-black cursor-pointer"><i data-lucide="ellipsis"></i></button>
+          <button class="text-gray-400 hover:text-black hidden md:block cursor-pointer"><i data-lucide="ellipsis"></i></button>
         </div>
         <div class="flex items-center gap-1.5 mt-3">
           <h3 class="font-bold text-base md:text-lg text-black satoshi">Alex M.</h3>
@@ -295,8 +289,8 @@
     <div class="border border-gray-200 rounded-2xl p-5 md:p-6 flex flex-col justify-between">
       <div>
         <div class="flex justify-between items-center w-full">
-          <div class="text-yellow-400 text-lg md:text-xl">★★★★★</div>
-          <button class="text-gray-400 hover:text-black cursor-pointer"><i data-lucide="ellipsis"></i></button>
+          <div class="text-yellow-400 text-lg md:text-xl">★★★⯨</div>
+          <button class="text-gray-400 hover:text-black hidden md:block cursor-pointer"><i data-lucide="ellipsis"></i></button>
         </div>
         <div class="flex items-center gap-1.5 mt-3">
           <h3 class="font-bold text-base md:text-lg text-black satoshi">Ethan R.</h3>
@@ -315,11 +309,11 @@
     </div>
 
     <!-- Review 4 -->
-    <div class="border border-gray-200 rounded-2xl p-5 md:p-6 flex flex-col justify-between">
+    <div class="border border-gray-200 rounded-2xl p-5 md:p-6 flex flex-col hidden md:block justify-between">
       <div>
         <div class="flex justify-between items-center w-full">
-          <div class="text-yellow-400 text-lg md:text-xl">★★★★★</div>
-          <button class="text-gray-400 hover:text-black cursor-pointer"><i data-lucide="ellipsis"></i></button>
+          <div class="text-yellow-400 text-lg md:text-xl">★★★★</div>
+          <button class="text-gray-400 hover:text-black hidden md:block cursor-pointer"><i data-lucide="ellipsis"></i></button>
         </div>
         <div class="flex items-center gap-1.5 mt-3">
           <h3 class="font-bold text-base md:text-lg text-black satoshi">Olivia P.</h3>
@@ -339,11 +333,11 @@
     </div>
 
     <!-- Review 5 -->
-    <div class="border border-gray-200 rounded-2xl p-5 md:p-6 flex flex-col justify-between">
+    <div class="border border-gray-200 rounded-2xl hidden md:block p-5 md:p-6 flex flex-col justify-between">
       <div>
         <div class="flex justify-between items-center w-full">
-          <div class="text-yellow-400 text-lg md:text-xl">★★★★★</div>
-          <button class="text-gray-400 hover:text-black cursor-pointer"><i data-lucide="ellipsis"></i></button>
+          <div class="text-yellow-400 text-lg md:text-xl">★★★★</div>
+          <button class="text-gray-400 hover:text-black hidden md:block cursor-pointer"><i data-lucide="ellipsis"></i></button>
         </div>
         <div class="flex items-center gap-1.5 mt-3">
           <h3 class="font-bold text-base md:text-lg text-black satoshi">Liam K.</h3>
@@ -362,11 +356,11 @@
     </div>
 
     <!-- Review 6 -->
-    <div class="border border-gray-200 rounded-2xl p-5 md:p-6 flex flex-col justify-between">
+    <div class="border border-gray-200 rounded-2xl hidden md:block p-5 md:p-6 flex flex-col justify-between">
       <div>
         <div class="flex justify-between items-center w-full">
-          <div class="text-yellow-400 text-lg md:text-xl">★★★★★</div>
-          <button class="text-gray-400 hover:text-black cursor-pointer"><i data-lucide="ellipsis"></i></button>
+          <div class="text-yellow-400 text-lg md:text-xl">★★★★⯨</div>
+          <button class="text-gray-400 hover:text-black  hidden md:block cursor-pointer"><i data-lucide="ellipsis"></i></button>
         </div>
         <div class="flex items-center gap-1.5 mt-3">
           <h3 class="font-bold text-base md:text-lg text-black satoshi">Ava H.</h3>
@@ -398,7 +392,7 @@
     <h2 class="logo text-3xl md:text-[40px] font-black text-center text-black">
       YOU MIGHT ALSO LIKE
     </h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-10 md:mt-14">
+    <div class="flex w-full  overflow-y-auto md:flex-cols-4 md:w-full gap-4 md:gap-8 mt-10 md:mt-14">
       <!-- Product 1 (Shown on Desktop & Mobile) -->
       <div class="flex flex-col">
         <div
@@ -440,38 +434,36 @@
       </div>
 
       <!-- Product 3 (Desktop Only) -->
-      <div class="hidden md:flex flex-col">
+      <div class=" flex flex-col">
         <div
-          class="w-full aspect-[1/1.1] bg-[#F0EEED] rounded-3xl flex justify-center items-center overflow-hidden cursor-pointer">
-          <img src="./images/m8.png"
-            class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-300">
+          class="w-full aspect-[1/1.1] bg-[#F0EEED]  rounded-[20px] md:rounded-3xl flex justify-center items-center overflow-hidden cursor-pointer">
+          <img src="./images/m8.png" class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-300">
         </div>
-        <h3 class="font-bold text-lg mt-3 text-black satoshi truncate">Polo with Tipping Details</h3>
+        <h3 class="font-bold text-sm md:text-lg mt-3 text-black satoshi truncate">Polo with Tipping Details</h3>
         <div class="flex gap-1.5 mt-1 items-center text-amber-400">
-          <span class="text-xl">★★★★</span>
-          <span class="text-xl overflow-hidden w-2 -ml-1">★</span>
-          <p class="text-sm text-black satoshi -ml-1 font-normal">4.5/<span class="text-gray-400">5</span></p>
+          <span class=" text-base md:text-xl">★★★★</span>
+          <span class=" text-base md:text-xl overflow-hidden w-2 -ml-1">★</span>
+          <p class="text-xs md:text-sm text-black satoshi -ml-1 font-normal">4.5/<span class="text-gray-400">5</span></p>
         </div>
         <div class="flex items-center gap-2 mt-2">
-          <span class="text-2xl font-bold text-black satoshi">$180</span>
+          <span class=" text-base md:text-2xl font-bold text-black satoshi">$180</span>
         </div>
       </div>
 
       <!-- Product 4 (Desktop Only) -->
-      <div class="hidden md:flex flex-col">
+      <div class=" flex flex-col">
         <div
-          class="w-full aspect-[1/1.1] bg-[#F0EEED] rounded-3xl flex justify-center items-center overflow-hidden cursor-pointer">
-          <img src="./images/m9.png"
-            class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-300">
+          class="w-full aspect-[1/1.1] bg-[#F0EEED] rounded-[20px] md:rounded-3xl flex justify-center items-center overflow-hidde cursor-pointer">
+          <img src="./images/m9.png" class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-300">
         </div>
-        <h3 class="font-bold text-lg mt-3 text-black satoshi truncate">Black Striped T-Shirt</h3>
+        <h3 class="font-bold text-sm md:text-lg mt-3 text-black satoshi truncate">Black Striped T-Shirt</h3>
         <div class="flex gap-1.5 mt-1 items-center text-amber-400">
-          <span class="text-xl">★★★★★</span>
-          <p class="text-sm text-black satoshi -ml-1 font-normal">5.0/<span class="text-gray-400">5</span></p>
+          <span class="text-base md:text-xl">★★★★★</span>
+          <p class="text-xs md:text-sm text-black satoshi -ml-1 font-normal">5.0/<span class="text-gray-400">5</span></p>
         </div>
         <div class="flex items-center gap-2 mt-2">
-          <span class="text-2xl font-bold text-black satoshi">$120</span>
-          <span class="text-lg text-gray-400 line-through font-bold satoshi">$150</span>
+          <span class="text-base md:text-2xl font-bold text-black satoshi">$120</span>
+          <span class=" text-sm md:text-lg text-gray-400 line-through font-bold satoshi">$150</span>
           <span class="bg-red-100 text-red-500 px-2 py-0.5 rounded-full text-xs font-semibold">-20%</span>
         </div>
       </div>
@@ -489,7 +481,7 @@
         class="w-full lg:w-[55%] text-left font-black text-2xl md:text-3xl lg:text-[40px] leading-tight logo uppercase">
         Stay up to date about our latest offers
       </h2>
-      <div class="flex flex-col gap-3 w-full lg:w-auto min-w-full sm:min-w-[350px]">
+      <div class="flex flex-col gap-3 w-full lg:w-auto min-w-full sm:min-w-87.5">
         <!-- Input -->
         <div class="relative w-full">
           <i data-lucide="mail" class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5"></i>
@@ -511,26 +503,26 @@
       <!-- Col 1 (Logo + Socials) -->
       <div class="col-span-2 md:col-span-1 flex flex-col pr-0 md:pr-4">
         <h2 class="logo text-3xl md:text-4xl font-black text-black">SHOP.CO</h2>
-        <p class="text-gray-500 mt-4 text-sm leading-relaxed max-w-[280px]">
+        <p class="text-gray-500 mt-4 text-sm leading-relaxed max-w-70">
           We have clothes that suits your style and which you're proud to wear.
         </p>
         <!-- Social Media Icons -->
         <div class="flex gap-3 mt-6">
           <a href="#"
             class="w-7 h-7 bg-white hover:bg-white text-black hover:text-black rounded-full flex items-center justify-center border border-gray-200 transition-colors shadow-sm">
-            <img src="./images/Vector.png" class="w-3.5 h-3.5"></i>
+            <img src="./images/Vector.png" class="w-3.5 h-3.5">
           </a>
           <a href="#"
             class="w-7 h-7 bg-black hover:bg-white text-white hover:text-black rounded-full flex items-center justify-center border border-gray-200 transition-colors shadow-sm">
-            <img src="./images/2.png" class="w-6.5 h-6.5"></i>
+            <img src="./images/2.png" class="w-5.5 h-5.5">
           </a>
           <a href="#"
             class="w-7 h-7 bg-white hover:bg-white text-black hover:text-black rounded-full flex items-center justify-center border border-gray-200 transition-colors shadow-sm">
-            <img src="./images/Group.png" class="w-3.5 h-3.5"></i>
+            <img src="./images/Group.png" class="w-3.5 h-3.5">
           </a>
           <a href="#"
-            class="w-7 h-7 bg-white hover:bg-white text-black hover:text-balance rounded-full flex items-center justify-center border border-gray-200 transition-colors shadow-sm">
-            <img src="./images/logo-github 1.png" class="w-3.5 h-3.5"></i>
+            class="w-7 h-7 bg-white hover:bg-white text-black hover:text-black rounded-full flex items-center justify-center border border-gray-200 transition-colors shadow-sm">
+            <img src="./images/logo-github 1.png" class="w-3.5 h-3.5">
           </a>
         </div>
       </div>
@@ -586,23 +578,23 @@
       <p class="text-gray-400 text-sm">Shop.co © 2000-2023, All Rights Reserved</p>
       <div class="flex gap-3">
         <div
-          class="flex justify-center items-center rounded-lg w-[46px] h-[30px] bg-white border border-gray-100 shadow-sm">
+          class="flex justify-center items-center rounded-lg w-11.5 h-7.5 bg-white border border-gray-100 shadow-sm">
           <img src="./images/Visa.png" class="w-8 object-contain">
         </div>
         <div
-          class="flex justify-center items-center rounded-lg w-[46px] h-[30px] bg-white border border-gray-100 shadow-sm">
+          class="flex justify-center items-center rounded-lg w-11.5 h-7.5 bg-white border border-gray-100 shadow-sm">
           <img src="./images/Mastercard.png" class="w-6 object-contain">
         </div>
         <div
-          class="flex justify-center items-center rounded-lg w-[46px] h-[30px] bg-white border border-gray-100 shadow-sm">
+          class="flex justify-center items-center rounded-lg w-11.5 h-7.5 bg-white border border-gray-100 shadow-sm">
           <img src="./images/Paypal.png" class="w-8 object-contain">
         </div>
         <div
-          class="flex justify-center items-center rounded-lg w-[46px] h-[30px] bg-white border border-gray-100 shadow-sm">
+          class="flex justify-center items-center rounded-lg w-11.5 h-7.5 bg-white border border-gray-100 shadow-sm">
           <img src="./images/ Pay.png" class="w-6 object-contain">
         </div>
         <div
-          class="flex justify-center items-center rounded-lg w-[46px] h-[30px] bg-white border border-gray-100 shadow-sm">
+          class="flex justify-center items-center rounded-lg w-11.5 h-7.5 bg-white border border-gray-100 shadow-sm">
           <img src="./images/G Pay.png" class="w-7 object-contain">
         </div>
       </div>

@@ -11,6 +11,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         second: resolve(__dirname, 'casual.html'),
+        third: resolve(__dirname, 'cart.html'),
+        fourth: resolve(__dirname, 'product.html'),
       },
     },
   },
